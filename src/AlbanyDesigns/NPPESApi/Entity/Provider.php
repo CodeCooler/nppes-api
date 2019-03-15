@@ -29,6 +29,11 @@ class Provider
      */
     private $addresses;
 
+     /**
+     * @var OtherName[]
+     */
+    private $otherNames;
+    
     /**
      * @var ProviderBasic
      */
@@ -114,6 +119,26 @@ class Provider
         $this->addresses = $addresses;
     }
 
+    
+    /**
+     * @return OtherName[]
+     */
+    public function getOtherNames()
+    {
+
+        return $this->other_names;
+    }
+
+    /**
+     * @param OtherName[] $otherNames
+     */
+    public function setOtherNames($otherNames)
+    {
+        $this->other_names = $otherNames;
+    }
+
+    
+    
     /**
      * @return ProviderBasic
      */
